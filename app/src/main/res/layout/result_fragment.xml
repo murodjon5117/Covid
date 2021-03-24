@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.result.ResultFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/global"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:paddingLeft="10dp"
+                android:text="Globally"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro"
+                android:paddingLeft="10dp"
+                android:text="Total Confirmed"
+                app:layout_constraintTop_toBottomOf="@+id/global" />
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/total2"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:paddingRight="10dp"
+                android:textColor="#5AC7AA"
+                tools:text="1000000"
+                app:layout_constraintTop_toBottomOf="@+id/global" />
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro"
+                android:paddingLeft="10dp"
+                android:text="Total Death"
+                app:layout_constraintTop_toBottomOf="@+id/total2" />
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/death2"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:paddingRight="10dp"
+                android:textColor="#F24E4E"
+                tools:text="50000"
+                app:layout_constraintTop_toBottomOf="@+id/total2" />
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/source_sans_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Total Recovered"
+                app:layout_constraintTop_toBottomOf="@+id/death2" />
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/recover2"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:paddingRight="10dp"
+                android:textColor="#3C3C3C"
+                tools:text="200000"
+                app:layout_constraintTop_toBottomOf="@+id/death2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/global3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:paddingLeft="10dp"
+                android:text="Uzbekistan"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro"
+                android:paddingLeft="10dp"
+                android:text="Total Confirmed"
+                app:layout_constraintTop_toBottomOf="@+id/global3" />
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/total3"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:paddingRight="10dp"
+                android:textColor="#5AC7AA"
+                tools:text="1000000"
+                app:layout_constraintTop_toBottomOf="@+id/global3" />
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro"
+                android:paddingLeft="10dp"
+                android:text="Total Death"
+                app:layout_constraintTop_toBottomOf="@+id/total3" />
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/death3"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:paddingRight="10dp"
+                android:textColor="#F24E4E"
+                tools:text="50000"
+                app:layout_constraintTop_toBottomOf="@+id/total3" />
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/source_sans_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Total Recovered"
+                app:layout_constraintTop_toBottomOf="@+id/death3" />
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/recover3"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:paddingRight="10dp"
+                android:textColor="#3C3C3C"
+                tools:text="200000"
+                app:layout_constraintTop_toBottomOf="@+id/death3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
